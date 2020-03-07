@@ -2,7 +2,6 @@
 
 # O(n^2) solution using nested loops
 def two_sums_naive(arr, n):
-  
   i = 0
   j = 0
 
@@ -14,7 +13,6 @@ def two_sums_naive(arr, n):
         return [i,j]
       j += 1
     i += 1
-
   print("not found")
 
 # O(n) solution using dictionaries
@@ -26,5 +24,4 @@ def two_sums(arr, n):
       return num, n-num
     else:
       pair_n[num] = True
-  
   print("not found")
